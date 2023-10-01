@@ -14,25 +14,32 @@ Before using the Linear Provider, you need to configure it by providing the foll
 
 - Description: The Linear API Token.
 - How to Obtain:
-  1. Visit the Linear app or website.
-  2. Log in to your Linear account.
+  1. Visit [Linear API Settings](https://linear.app/bcv/settings/api).
+  2. Log in to your Linear account if prompted.
   3. Navigate to your account settings.
   4. Locate the API Token section and generate a new token.
   5. Copy the generated API token.
- 
-  
 
-#### `project_id` (string, required)
+#### `team_id` (string, required)
 
-- Description: The Linear Project ID.
+- Description: The Linear Team ID, used to fetch, create, edit, and delete issues specific to a team.
 - How to Obtain:
   1. Log in to your Linear account.
-  2. Navigate to the project you want to access.
-  3. In the project details, you will find the Project ID.
+  2. Navigate to the team you want to access.
+  3. In the team details, you will find the Team ID.
 
+## Usage
 
+After configuring the Linear Provider, you can use it to:
+
+1. Fetch existing issues for a specific team.
+2. Create new issues for a specific team.
+3. Edit the details of an existing issue.
+4. Delete an issue.
+
+Make sure to provide the necessary input parameters when performing these operations.
 
 ## Useful Links
 
 - [Linear](https://linear.app/)
-- [Linear-Projects](https://linear.app/docs/projects)
+- [Linear-GraphQL API](https://developers.linear.app/docs/graphql/working-with-the-graphql-api)
